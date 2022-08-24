@@ -56,21 +56,9 @@ namespace Practice
                     int numTwo = 0;
                     string[] inputSymbols = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
-                    for (int j = 0; j < inputSymbols.Length; j++)
-                    {
-                        bool check = int.TryParse(inputSymbols[j], out int number);
-                        if (check == true)
-                        {
-                            if (j == 0)
-                            {
-                                numOne = number - 1;
-                            }
-                            else if (j == 1)
-                            {
-                                numTwo = number - 1;
-                            }
-                        }
-                    }
+                    numOne = int.Parse(inputSymbols[0])-1;
+                    numTwo = int.Parse(inputSymbols[1])-1;
+           
                     Console.Clear();
                     if (input == "help" || input == "h")
                     {
