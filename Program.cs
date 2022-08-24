@@ -1,0 +1,2 @@
+﻿using Practice;
+Menu.PrintMenu();
